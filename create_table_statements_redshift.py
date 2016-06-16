@@ -21,7 +21,7 @@ def add_encode(encode_type):
     if encode_type=="none":
         return ""
     else:
-        return "endcode "+str(encode_type)
+        return "encode "+str(encode_type)
 
 def execute_test_case(db_host, db_user, db_password, db_db, fname):
     db = psycopg2.connect(host=db_host, user=db_user, password=db_password, dbname=db_db, port=5439)
