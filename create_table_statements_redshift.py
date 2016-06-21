@@ -2,10 +2,10 @@ import sys
 import psycopg2
 
 def main():
-    db_host = "<host>"
-    db_user = "<username>"
-    db_password = "<password>"
-    db_db = "<database>"
+    db_host = sys.argv[1]
+    db_user = sys.argv[2]
+    db_password = sys.argv[3]
+    db_db = sys.argv[4]
     fname = "input.txt"
     print("Execution Starts")
     execute_test_case(db_host, db_user, db_password, db_db, fname)
